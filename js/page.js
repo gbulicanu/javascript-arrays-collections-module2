@@ -24,8 +24,8 @@ let total = Array.of(
 //alert(addYearlyTotal(...total));
 
 function findOver1000() {
-  let firstThousand = monthlySales.find((element) => element > 1000);
-  alert(firstThousand);
+  let firstThousandIndex = monthlySales.findIndex((element) => element > 1000);
+  alert(firstThousandIndex);
 }
 
 let yearlyTotal = addYearlyTotal(...monthlySales);
