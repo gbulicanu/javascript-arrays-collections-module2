@@ -2,7 +2,7 @@ let ctx = document.getElementById("monthlySales").getContext("2d");
 let pieCtx = document.getElementById("deptSales").getContext("2d");
 
 // Bar
-var monthlySalesChart = new Chart(ctx, {
+let monthlySalesChart = new Chart(ctx, {
   type: "bar",
   data: {
     labels: ["Oct", "Nov", "Dec"],
@@ -33,7 +33,7 @@ var monthlySalesChart = new Chart(ctx, {
 });
 
 // Pie
-var deptSalesChart = new Chart(pieCtx, {
+let deptSalesChart = new Chart(pieCtx, {
   type: "pie",
   data: {
     labels: ["Hiking", "Running", "Hunting"],
