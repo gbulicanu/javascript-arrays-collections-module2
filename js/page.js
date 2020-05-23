@@ -7,6 +7,13 @@ let monthlyLabels = Array.of("Oct", "Nov", "Dec");
 let deptSales = Array.of(12, 9, 3);
 let deptLabels = Array.of("Hiking", "Running", "Hunting");
 
+function addYearlyTotal(a, b, c) {
+  return a + b + c;
+}
+
+let yearlyTotal = addYearlyTotal(monthlySales);
+alert(yearlyTotal);
+
 // Bar
 let monthlySalesChart = new Chart(ctx, {
   type: "bar",
