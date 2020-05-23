@@ -40,7 +40,7 @@ var deptSalesChart = new Chart(pieCtx, {
     datasets: [
       {
         label: "# of Sales",
-        data: [8, 20, 7],
+        data: [14, 19, 3],
         backgroundColor: [
           "rgba(238, 184, 104, 1)",
           "rgba(75, 166, 223, 1)",
