@@ -1,15 +1,21 @@
 let ctx = document.getElementById("monthlySales").getContext("2d");
 let pieCtx = document.getElementById("deptSales").getContext("2d");
 
+let monthlySales = Array.of(12, 9, 3);
+let monthlyLabels = Array.of("Oct", "Nov", "Dec");
+
+let deptSales = Array.of(12, 9, 3);
+let deptLabels = Array.of("Hiking", "Running", "Hunting");
+
 // Bar
 let monthlySalesChart = new Chart(ctx, {
   type: "bar",
   data: {
-    labels: ["Oct", "Nov", "Dec"],
+    labels: monthlyLabels,
     datasets: [
       {
         label: "# of Sales",
-        data: [14, 19, 3],
+        data: monthlySales,
         backgroundColor: [
           "rgba(238, 184, 104, 1)",
           "rgba(75, 166, 223, 1)",
@@ -36,11 +42,11 @@ let monthlySalesChart = new Chart(ctx, {
 let deptSalesChart = new Chart(pieCtx, {
   type: "pie",
   data: {
-    labels: ["Hiking", "Running", "Hunting"],
+    labels: deptLabels,
     datasets: [
       {
         label: "# of Sales",
-        data: [14, 19, 3],
+        data: deptSales,
         backgroundColor: [
           "rgba(238, 184, 104, 1)",
           "rgba(75, 166, 223, 1)",
