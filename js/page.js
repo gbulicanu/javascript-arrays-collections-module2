@@ -11,7 +11,7 @@ function addYearlyTotal(a, b, c) {
   return a + b + c;
 }
 
-let yearlyTotal = addYearlyTotal(monthlySales);
+let yearlyTotal = addYearlyTotal(...monthlySales);
 alert(yearlyTotal);
 
 // Bar
