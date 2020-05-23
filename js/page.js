@@ -8,19 +8,23 @@ let monthlyLabels = Array.of("Oct", "Nov", "Dec");
 let deptSales = Array.of(12, 9, 3);
 let deptLabels = Array.of("Hiking", "Running", "Hunting");
 
-function addYearlyTotal(a, b, c) {
-  return a + b + c;
+let yearlyTotal = 0;
+
+function addYearlyTotal(x) {
+  yearlyTotal = x + yearlyTotal;
 }
+
+monthlySales.forEach(addYearlyTotal);
 
 let octNumbers = Array.of(1200, 1000, 9000);
 let novNumbers = Array.of(1100, 2000, 9000);
 let decNumbers = Array.of(4000, 1000, 5000);
 
-let total = Array.of(
+/* let total = Array.of(
   addYearlyTotal(...octNumbers),
   addYearlyTotal(...novNumbers),
   addYearlyTotal(...decNumbers)
-);
+); */
 //alert(addYearlyTotal(...total));
 
 function findOver1000() {
@@ -33,7 +37,7 @@ function resetNumbers() {
   monthlySalesChart.update();
 }
 
-let yearlyTotal = addYearlyTotal(...monthlySales);
+// let yearlyTotal = addYearlyTotal(...monthlySales);
 yearlyLabel.innerHTML = "$" + yearlyTotal;
 
 // Bar
