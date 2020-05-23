@@ -9,7 +9,7 @@ var monthlySalesChart = new Chart(ctx, {
     datasets: [
       {
         label: "# of Sales",
-        data: [12, 9, 3],
+        data: [14, 19, 3],
         backgroundColor: [
           "rgba(238, 184, 104, 1)",
           "rgba(75, 166, 223, 1)",
