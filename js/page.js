@@ -16,8 +16,12 @@ let octNumbers = Array.of(1200, 1000, 9000);
 let novNumbers = Array.of(1100, 2000, 9000);
 let decNumbers = Array.of(4000, 1000, 5000);
 
-let total = Array.of(...octNumbers, ...novNumbers, ...decNumbers);
-alert(total);
+let total = Array.of(
+  addYearlyTotal(...octNumbers),
+  addYearlyTotal(...novNumbers),
+  addYearlyTotal(...decNumbers)
+);
+alert(addYearlyTotal(...total));
 
 let yearlyTotal = addYearlyTotal(...monthlySales);
 yearlyLabel.innerHTML = "$" + yearlyTotal;
